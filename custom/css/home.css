@@ -1,0 +1,15 @@
+.masthead .title-name {
+    letter-spacing: 1px;
+    font-size: 80px;
+    color: white;
+    font-family: 'YourChosenFont', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+.masthead .title-desrice {
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: white;
+    font-family: 'YourChosenFont', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
