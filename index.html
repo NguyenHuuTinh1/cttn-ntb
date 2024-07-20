@@ -15,7 +15,12 @@
           rel="stylesheet"/>
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/mdb.dark.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+
+    <!--custom CSS-->
     <link rel="stylesheet" href="custom/css/home.css">
 </head>
 <body id="page-top">
@@ -49,27 +54,28 @@
         <div class="d-flex justify-content-center">
             <div class="text-center">
                 <div><p class="title-name">NGUYỄN THÁI BÌNH</p></div>
-                <div><p class="title-desrice">Cựu sinh viên Trường Đại học Nông Lâm TP.HCM. <br> Tấm gương sáng của phong trào yêu nước trong giới sinh viên, trí thức</p></div>
+                <div><p class="title-desrice">Cựu sinh viên Trường Đại học Nông Lâm TP.HCM. <br> Tấm gương sáng của
+                    phong trào yêu nước trong giới sinh viên, trí thức</p></div>
             </div>
         </div>
     </div>
 </header>
 <!-- About-->
-<section class="projects-section bg-light" id="projects">
+<section class="projects-section bg-light" id="general">
     <div class="container px-4 px-lg-5">
         <!-- Featured Project Row-->
-<!--        <div class="row gx-0 mb-4 mb-lg-5 align-items-center">-->
-<!--            <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg"-->
-<!--                                                alt="..."/></div>-->
-<!--            <div class="col-xl-4 col-lg-5">-->
-<!--                <div class="featured-text text-center text-lg-left">-->
-<!--                    <h4>Shoreline</h4>-->
-<!--                    <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it-->
-<!--                        for any project - even commercial projects! Download it, customize it, and publish your-->
-<!--                        website!</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
+        <!--        <div class="row gx-0 mb-4 mb-lg-5 align-items-center">-->
+        <!--            <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg"-->
+        <!--                                                alt="..."/></div>-->
+        <!--            <div class="col-xl-4 col-lg-5">-->
+        <!--                <div class="featured-text text-center text-lg-left">-->
+        <!--                    <h4>Shoreline</h4>-->
+        <!--                    <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it-->
+        <!--                        for any project - even commercial projects! Download it, customize it, and publish your-->
+        <!--                        website!</p>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--        </div>-->
         <!-- Project Two Row-->
         <div class="row gx-0 justify-content-center">
             <div class="col-lg-4 "><img class="img-fluid p5" src="custom/img/home/avt.jpg" alt="..."/></div>
@@ -87,7 +93,8 @@
                                 xã Tân Kim, huyện Cần Giuộc, tỉnh Long An.
                             </p>
                             <div class="mt-5">
-                                <button class="btn btn-primary"><a class="nav-link" href="custom/page/general.html">Xem chi tiết</a></button>
+                                <button class="btn btn-primary"><a class="nav-link" href="custom/page">Xem chi tiết</a>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -102,9 +109,14 @@
                     <div class="d-flex h-100">
                         <div class="project-text w-100 my-auto text-center text-lg-left">
                             <h4 class="text-white">Tiểu sử</h4>
-                            <p class="mb-0 text-white-50">Nền tảng gia đình: Nguyễn Thái Bình sinh ra trong một gia đình lao động bình thường, là con thứ hai trong 9 người con của bà Lê Thị Anh và ông Nguyễn Văn Hai (Thái Bình là con thứ ba trong 12 người con, trong đó 4 người đã chết nếu tính luôn Thái Bình). Cha anh, một thư ký đánh máy tại Ty Công tác Thương Cảng Sài Gòn, không làm đủ nuôi gia đình đông con, cho nên anh làm việc nhặt banh quần vợt để kiếm tiền phụ cha.</p>
+                            <p class="mb-0 text-white-50">Nền tảng gia đình: Nguyễn Thái Bình sinh ra trong một gia đình
+                                lao động bình thường, là con thứ hai trong 9 người con của bà Lê Thị Anh và ông Nguyễn
+                                Văn Hai (Thái Bình là con thứ ba trong 12 người con, trong đó 4 người đã chết nếu tính
+                                luôn Thái Bình). Cha anh, một thư ký đánh máy tại Ty Công tác Thương Cảng Sài Gòn, không
+                                làm đủ nuôi gia đình đông con, cho nên anh làm việc nhặt banh quần vợt để kiếm tiền phụ
+                                cha.</p>
                             <div class="mt-5">
-                                <button class="btn btn-primary"><a class="nav-link" href="custom/page/general.html">Xem chi tiết</a></button>
+                                <button class="btn btn-primary"><a class="nav-link" href="#">Xem chi tiết</a></button>
                             </div>
                         </div>
                     </div>
@@ -272,14 +284,79 @@
         </div>
     </div>
 </section>
+<!-- Carousel wrapper -->
+<div id="carouselMaterialStyle" class="carousel slide carousel-fade" data-mdb-ride="carousel" data-mdb-carousel-init>
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+        <button type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+        <button type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <!-- Inner -->
+    <div class="carousel-inner rounded-5 shadow-4-strong">
+        <!-- Single item -->
+        <div class="carousel-item active">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(15).webp" class="d-block w-100"
+                 alt="Sunset Over the City" />
+            <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(22).webp" class="d-block w-100"
+                 alt="Canyon at Nigh" />
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(23).webp" class="d-block w-100"
+                 alt="Cliff Above a Stormy Sea" />
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Inner -->
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<!-- Carousel wrapper -->
 <!-- Footer-->
 <footer class="footer bg-black small text-center text-white-50">
     <div class="container px-4 px-lg-5">Copyright &copy; Your Website 2023</div>
 </footer>
+<script src="js/scripts.js"></script>
+<script>
+    // Initialization for ES Users
+    import { Carousel, initMDB } from "mdb-ui-kit";
+
+    initMDB({ Carousel });
+</script>
 <!-- Bootstrap core JS-->
+
+<script src="js/mdb.es.min.js"></script>
+<script src="js/mdb.umd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
-<script src="js/scripts.js"></script>
+
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
 <!-- * *                               SB Forms JS                               * *-->
 <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
