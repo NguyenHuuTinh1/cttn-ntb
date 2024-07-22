@@ -1,0 +1,343 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial;
+}
+::selection{
+    color: #fff;
+    background: #ff7979;
+}
+.wrapper{
+    max-width: 1080px;
+    margin: 50px auto;
+    padding: 0 20px;
+    position: relative;
+    padding-top: 70px;
+}
+.wrapper .center-line{
+    position: absolute;
+    height: 100%;
+    width: 10px;
+    background: #fff;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+}
+.wrapper .row{
+    display: flex;
+}
+.wrapper .row-1{
+    justify-content: flex-start;
+}
+.wrapper .row-2{
+    justify-content: flex-end;
+}
+.wrapper .row section{
+    background: #fff;
+    border-radius: 25px;
+    width: calc(50% - 40px);
+    padding: 20px;
+    position: relative;
+}
+.wrapper .row section::before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    top: 28px;
+    z-index: -1;
+    transform: rotate(45deg);
+}
+.row-1 section::before{
+    right: -7px;
+}
+.row-2 section::before{
+    left: -7px;
+}
+.row section .icon,
+.center-line .scroll-icon{
+    position: absolute;
+    background: #f2f2f2;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #f4a61f;
+    font-size: 17px;
+    box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05);
+}
+.center-line .scroll-icon{
+    bottom: 0px;
+    left: 50%;
+    font-size: 25px;
+    transform: translateX(-50%);
+}
+.row-1 section .icon{
+    top: 15px;
+    right: -60px;
+}
+.row-2 section .icon{
+    top: 15px;
+    left: -60px;
+}
+.row section .details,
+.row section .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row section .details .title{
+    font-size: 22px;
+    font-weight: 600;
+}
+.row section p{
+    margin: 10px 0 17px 0;
+}
+.row section .bottom a{
+    text-decoration: none;
+    background: #ff7979;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 5px;
+    /* font-size: 17px; */
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+.row section .bottom a:hover{
+    transform: scale(0.97);
+}
+@media(max-width: 790px){
+    .wrapper .center-line{
+        left: 40px;
+    }
+    .wrapper .row{
+        margin: 30px 0 3px 60px;
+    }
+    .wrapper .row section{
+        width: 100%;
+    }
+    .row-1 section::before{
+        left: -7px;
+    }
+    .row-1 section .icon{
+        left: -60px;
+    }
+}
+@media(max-width: 440px){
+    .wrapper .center-line,
+    .row section::before,
+    .row section .icon{
+        display: none;
+    }
+    .wrapper .row{
+        margin: 10px 0;
+    }
+}
+
+/*style nút 'xem thêm'*/
+body {
+    font-family: Arial, sans-serif;
+}
+
+.view-more {
+    background-color: transparent;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.modal img {
+    width: 100%;
+    height: auto;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3; /* Giữ tỷ lệ cho các ảnh */
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.action, .dot:hover {
+    background-color: #717171;
+}
+
+.dots-container {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.dot.action {
+    background-color: #717171; /* Màu sắc cho chấm tròn được chọn */
+}
+
+.img-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+/* Định dạng lại hình ảnh */
+.img-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/*Cuộn trang*/
+
+
+.timeline-line {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(228, 228, 228);
+    border-radius: 12px;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.timeline-innerline {
+    position: absolute;
+    background: rgb(255, 187, 0); /* Color of the line, can be changed */
+    width: 100%;
+    height: 0%; /* Initial height, will be adjusted by JavaScript */
+    top: 0;
+    left: 0;
+    transition: height 0.5s ease-in-out; /* Smooth transition for height changes */
+    border-radius: 999px; /* Rounded corners */
+}
+
+.scroll-icon {
+    position: absolute;
+    bottom: 0; /* Aligns the icon to the bottom of the center-line */
+    left: 50%; /* Center the icon horizontally */
+    transform: translateX(-50%); /* Center the icon horizontally */
+    margin-bottom: 0px; /* Adjust as needed for spacing */
+    z-index: 1; /* Ensure the icon is above the timeline */
+}
+
+
+/**/
+.row {
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+
+
+.row.in-view {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.row {
+    opacity: 0;
+}
+
+
+/**/

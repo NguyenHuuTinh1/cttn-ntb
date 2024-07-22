@@ -13,3 +13,16 @@
     font-family: 'YourChosenFont', sans-serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+.btnAnimation {
+    animation: glowing 1500ms infinite;
+}
+
+@-webkit-keyframes glowing {
+    50%{
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
+    }
+}
+.footerLogo{
+    width: 100%;
+}
