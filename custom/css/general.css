@@ -6,6 +6,77 @@
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
+main {
+  background-image: url(https://file.qdnd.vn/data/images/13/2021/04/09/viethungvn/cong%20vien%20-%20tuong%20dai%20nguyen%20thai%20binh%20tai%20cua%20ngo%20vao%20thi%20tran%20can%20giuoc%20huyen%20can%20giuoc%20tinh%20long%20an.jpg?dpi=150&quality=100&w=575);
+  background-size: cover;
+  /* background: rgba(0,0,0,0.5); */
+}
+
+.typing-wrapper {
+  animation: typing 1s steps(30), blink 1s;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  0% {
+    border-right: 3px solid white;
+  }
+
+  100% {
+    border-right: 3px solid transparent;
+  }
+}
+
+.my-hidden {
+  opacity: 0;
+  transition: all 2s;
+}
+
+.my-left-hidden {
+  transform: translateX(-100%);
+}
+
+.my-right-hidden {
+  transform: translateX(100%);
+}
+
+.my-blur-hidden {
+  filter: blur(5px);
+}
+
+.my-show {
+  opacity: 1;
+  transform: translateX(0%);
+  filter: blur(0)
+}
+
+.part-5 {
+  background-image: url("../img/general/part5.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+@keyframes nhap-nhay {
+  0% {
+    /* border: 2px solid transparent; */
+    color: transparent;
+  }
+
+  100% {
+    /* border: 2px solid slategrey; */
+    color: slategray;
+  }
+}
 
 *,
 ::before,
@@ -676,7 +747,7 @@ video {
 }
 
 .h-\[640\] {
-  height: 640;
+  height: 640px;
 }
 
 .h-full {
@@ -704,7 +775,6 @@ video {
 }
 
 .w-max {
-  width: -moz-max-content;
   width: max-content;
 }
 
@@ -770,14 +840,14 @@ video {
 
 .overflow-x-clip {
   overflow-x: clip;
-}
+ }
 
 .overflow-y-scroll {
   overflow-y: scroll;
 }
 
 .text-nowrap {
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .rounded-\[2rem\] {

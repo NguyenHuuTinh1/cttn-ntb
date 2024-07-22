@@ -1,13 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CON ĐƯỜNG HOẠT ĐỘNG</title>
+    <link rel="stylesheet" href="/custom/css/event.css">
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="/css/styles.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/mdb.dark.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
+
 <body>
-<!--NHung-->
-<h1>Nhung</h1> <h1>Khoi</h1>
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top pt-2" id="mainNav">
+    <div class="container px-4 px-lg-5">
+        <div class="collapse navbar-collapse">
+            <a href="/index.html">
+                <img class="imgTitle w-10" src="/custom/img/home/logo_truong.png">
+                <img class="imgTitle w-10" src="/custom/img/home/logo_doan.png">
+                <img class="imgTitle w-10" src="/custom/img/home/logo_hoi.png">
+            </a>
+        </div>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto ">
+                <li class="nav-item"><a class="nav-link" href="general.html">Khái Quát</a></li>
+                <li class="nav-item"><a class="nav-link" href="event.html">Sự Kiện</a></li>
+                <li class="nav-item"><a class="nav-link" href="historicalSignificance.html">Ý Nghĩa</a></li>
+                <li class="nav-item"><a class="nav-link" href="honor.html">Tôn vinh</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--Time line-->
+<div class="wrapper">
+    <div class="center-line">
+        <div class="timeline-line">
+            <span class="timeline-innerline"></span>
+        </div>
+        <a href="#" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
+    </div>
+    <div class="row row-1">
+        <section>
+            <i class="icon fas"></i>
+            <div class="details">
+                <span class="title text-black">10/02/1972</span>
+            </div>
+            <p class="text-black">Đột nhập và chiếm tòa lãnh sự của Việt Nam Cộng hòa tại thành phố New York.</p>
+            <div class="bottom">
+                <button class="btn btn-success view-more" data-modal="modal1">Xem thêm</button>
+            </div>
+        </section>
+    </div>
+    <div class="row row-2">
+        <section>
+            <i class="icon fas"></i>
+            <div class="details">
+                <span class="title text-black">Đầu tháng 2 đến đầu tháng 7/1972</span>
+            </div>
+            <p class="text-black">Nguyễn Thái Bình đã tham gia hoặc trực tiếp tổ chức hàng chục sự kiện phản chiến khác nhau tại Mỹ.</p>
+            <div class="bottom">
+                <button class="btn btn-success view-more" data-modal="modal2">Xem thêm</button>
+            </div>
+        </section>
+    </div>
+    <div class="row row-1">
+        <section>
+            <i class="icon fas"></i>
+            <div class="details">
+                <span class="title text-black">26/05/1972</span>
+            </div>
+            <p class="text-black">Chính thức tốt nghiệp Đại học Washington, Seattle với bằng danh dự.</p>
+            <div class="bottom">
+                <button class="btn btn-success view-more" data-modal="modal3">Xem thêm</button>
+            </div>
+        </section>
+    </div>
+    <div class="row row-2">
+        <section>
+            <i class="icon fas"></i>
+            <div class="details">
+                <span class="title text-black">02/07/1972</span>
+            </div>
+            <p class="text-black">Anh bị bắn năm phát đạn trên ngực trái, thi thể bị vứt qua cửa máy bay xuống đường băng với lời vu khống là không tặc.</p>
+            <div class="bottom">
+                <button class="btn btn-success view-more" data-modal="modal4">Xem thêm</button>
+
+            </div>
+        </section>
+    </div>
+</div>
+
+<!-- Modal 1 -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="custom/img/event/portrait1h.jpg" alt="Description 1">
+        <em class="text-white">Ảnh sưu tầm</em>
+        <p class="text-white" style="text-align: justify">Nguyễn Thái Bình cùng 9 sinh viên Việt kiều khác (6 nam và 3 nữ) đã đột
+            nhập và chiếm tòa
+            lãnh sự của chính quyền Sài Gòn tại số 886 Quảng trường Liên Hợp Quốc, thành phố New York, phát
+            đi bản tuyên
+            bố lên án Đế quốc Mỹ xâm lược và Ngụy quyền Sài Gòn song yêu cầu đòi trả tự do cho 200.000 tù
+            nhân chính trị
+            tại Việt Nam, tổng thống Nguyễn Văn Thiệu từ chức và giải thể &quot;
+            chế độ dã man&quot;, và Hoa Kỳ rút khỏi Việt Nam vô điều kiện, đồng thời thành lập chính phủ
+            liên hiệp thông
+            qua bầu cử thực sự dân chủ. Bản tuyên bố này đã được truyền đi tới các nước như Pháp, Canada và
+            các nước
+            Mỹ La tinh. Tòa lãnh sự đã nhờ cảnh sát Mỹ can thiệp và bắt tất cả các sinh viên, song theo công
+            pháp
+            quốc tế, họ buộc phải miễn tố. Tháng 3/1972 anh bị cắt học bổng.</p>
+    </div>
+</div>
+
+<!-- Modal 2 -->
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="slideshow-container">
+            <div class="slide">
+                <div class="img-container">
+                    <img src="/custom/img/event/meeting.jpg" alt="Description 2-1">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <div class="dots-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+                <p class="text-white" style="text-align: justify">Ngày 11.2.1972, Bình thuyết trình tại Đại học đường Washington đề tài "Phản ứng về sự leo thang chiến tranh tại Việt Nam".</p>
+            </div>
+            <div class="slide">
+                <div class="img-container">
+                    <img src="/custom/img/event/Zing_My_Lai__2.jpg" alt="Description 2-2">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <div class="dots-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+                <p class="text-white" style="text-align: justify">Ngày 23.2.1972, Bình viết trên báo Daily của Đại học đường Washington đề xuất đến cuộc thảm sát thường dân Việt Nam tại Mỹ Lai do trung úy Calley gây ra, và đả kích chương trình hòa bình của Tổng thống Nixon...".</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal 3 -->
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="/custom/img/event/graad1h.jpg" alt="Description 3">
+        <em class="text-white">Nguyễn Thái Bình tại lễ tốt nghiệp</em>
+        <p  class="text-white" style="text-align: justify">Mặc dù bận rộn tham gia hoặc trực tiếp tổ chức
+            các chiến dịch phản chiến tại Mỹ, Nguyễn Thái Bình học vẫn giỏi. Tháng 5/1972,
+            anh được công nhận hạng danh dự ở trường Đại học Washington.Trong lễ trao học vị
+            lần thứ 97 của trường, anh đã phân phát truyền đơn và cố gắng giành lấy micro để phát biểu một
+            bài có tựa
+            đề “Nợ máu chống chiến tranh xâm lược của Mỹ ở Việt Nam”. anh đã lên án những hành động tội
+            ác chống nhân dân Việt Nam bằng lời lẽ đanh thép, hùng hồn: “Hôm nay, để nhận được mảnh
+            bằng tốt nghiệp, nhiều bạn đã phải nợ trường hàng ngàn đô la, còn đối với tôi, tôi lại phải
+            chịu một món nợ máu xương của hàng triệu người Việt Nam. Bởi vì thời gian yên ổn của tôi để
+            học tập ở nơi đây trị giá bằng cái chết, sự đau khổ của dân tộc tôi, sự tàn phá trên quê
+            hương Việt Nam của tôi. Tất cả các bạn cũng chịu món nợ máu này như nhân dân Mỹ phải chịu trách
+            nhiệm về quy mô của những tội ác chiến tranh mà chính phủ Mỹ đã phạm phải khi chống lại nhân dân
+            Việt Nam
+            cũng như nhân dân Đông Dương”. Và anh dõng dạc công bố: “Hôm nay hàng trăm vụ ném bom bằng B52,
+            hàng ngàn tấn bom
+            na-pan, bom lân tinh, chất khai quang… tất cả đều đổ lên đầu trẻ thơ vô tội và những người già,
+            tàn phá nhà thờ, trường học, chùa chiền, bệnh viện tại Việt Nam. Tôi tin rằng lương tâm nhân
+            loại vẫn còn ở mỗi con người. Tôi kêu gọi tất cả các bạn hãy lên tiếng vì hòa bình, đứng về phía
+            công lý và giúp đỡ cuộc đấu tranh của nhân dân Việt Nam nhằm kết thúc cuộc chiến phi nghĩa, phi
+            nhân và tàn bạo này!”..Anh viết trên lưng áo
+            của mình dòng chữ: &quot;Việc Mỹ ở Việt Nam là vô đạo lý&quot; làm gián đoạn buổi lễ. Trên đầu
+            của mũ cử nhân khoa học của anh, dòng chữ “Việt Nam” được viết.
+        </p>
+    </div>
+</div>
+
+<!-- Modal 4 -->
+<div id="modal4" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div>
+            <img src="/custom/img/event/Picture1.png" alt="Description 4">
+            <em class="text-white">Thi hài anh Nguyễn Thái Bình trên đường băng Tân Sơn Nhứt vào ngày 2-7-1972</em>
+        </div>
+        <div>
+            <p class="text-white" style="text-align: justify">Chuyến bay về nhà của Anh được lên lịch vào ngày 2 tháng 7 năm 1972
+                trên chuyến bay Pan Am 841
+                khởi hành từ San Francisco đến Sài Gòn qua các điểm dừng ở Honolulu, Guam và Manila. Sau khi máy
+                bay cất cánh từ Manila, Bình, mang theo một con dao và một gói hàng mà anh ta khẳng định là có
+                bom, đã bắt tiếp viên hàng không May Yuen làm con tin.
+                Thông qua cô ấy, anh đã chuyển một tờ giấy cho Cơ trưởng Gene Vaughn yêu cầu máy bay bay đến Hà
+                Nội, nếu không nó sẽ bị bắn hạ, theo tờ New York Times. Khi cơ trưởng không tuân theo, Bình lại
+                chuyển lên một tờ giấy khác, lần này được viết bằng máu của mình, nhấn mạnh mức độ nghiêm túc
+                của anh về việc muốn được đưa đến Hà Nội. Tên Vaughn đến gặp và nói chuyện với Bình để đánh lạc
+                hướng anh. Bình đe dọa cơ trưởng bằng những "quả bom" của mình, sau đó được phát hiện là hai quả
+                chanh. Vaughn đã đoán rằng Bình đang nói dối, vì vậy anh ta nói Bình tiến lại gần và tìm cơ hội
+                bắt lấy anh ta với sự giúp đỡ của một số hành khách.
+
+                Cơ trưởng sau đó hét lên “Giết thằng khốn đó!” với một hành khách trên máy bay được cho là Mills
+                -một cảnh sát tại bang California Mỹ sang Việt Nam để làm việc cho hãng Fedéral Electric
+                Corporation- với khẩu súng ngắn Smith and Wesson 357 Magnum, sau đó bị bắn năm phát khi Vaughn
+                giữ cổ anh ta, theo lời khai của Vaughn. Cơ trưởng sau đó ném xác Anh ra khỏi máy bay.
+            </p>
+        </div>
+    </div>
+</div>
 
 
+<script src="/custom/js/event.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<!-- Bootstrap core JS-->
+<script src="js/js-bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/5030-js-scripts.js"></script>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+<!-- * *                               SB Forms JS                               * *-->
+<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+<script src="js/sb-forms-latest.js"></script>
 </body>
+
 </html>

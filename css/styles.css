@@ -11118,7 +11118,7 @@ body {
 }
 
 .about-section {
-    padding-top: 10rem;
+    padding-top: 2rem;
     background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
 }
 .about-section p {
@@ -11149,7 +11149,7 @@ body {
 
 .signup-section {
     padding: 10rem 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-signup.jpg");
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../custom/img/honor/hoatdong1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
